@@ -10,6 +10,11 @@ RSpec.describe User, type: :model do
     expect(subject).to_not be_valid
   end
 
+  it 'Lenth should be three' do
+    posts = User.three_most_recent_posts(User.first.id)
+    expect(posts.length).to eq(3)
+  end
+
   it 'PostsCounter must be greater than or equal to zero.' do
     subject.posts_counter = -1
     expect(subject).to_not be_valid
