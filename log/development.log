@@ -837,3 +837,49 @@ FOREIGN KEY ("post_id")
   [1m[36mTRANSACTION (6.6ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(1842827930600050695)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-07-18 15:39:06 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (50.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/anicetfantomas/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/anicetfantomas/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 44.7ms | Allocations: 740)
+Completed 200 OK in 171ms (Views: 70.5ms | ActiveRecord: 0.0ms | Allocations: 6499)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 23:47:07 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/anicetfantomas/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/anicetfantomas/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.9ms | Allocations: 740)
+Completed 200 OK in 111ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 6497)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-19 23:47:12 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/anicetfantomas/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/anicetfantomas/.rbenv/versions/3.0.1/lib/ruby/gems/3.0.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.1ms | Allocations: 407)
+Completed 200 OK in 34ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 1425)
+
+
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (131.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "posts_counter", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Yan"], ["photo", "fgfgrdre"], ["bio", "developper"], ["posts_counter", 0], ["created_at", "2022-07-20 11:26:07.759569"], ["updated_at", "2022-07-20 11:26:07.759569"]]
+  [1m[36mTRANSACTION (27.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/" for 127.0.0.1 at 2022-07-20 14:23:02 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 442)
+  Rendered layout layouts/application.html.erb (Duration: 660.3ms | Allocations: 98110)
+Completed 200 OK in 860ms (Views: 675.4ms | ActiveRecord: 0.0ms | Allocations: 104031)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-20 14:42:24 +0200
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3155)
+Completed 200 OK in 13ms (Views: 11.2ms | Allocations: 4341)
+
+
