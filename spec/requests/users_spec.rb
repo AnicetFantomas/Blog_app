@@ -16,7 +16,7 @@ RSpec.describe 'Users', type: :request do
     end
 
     it 'Should have text Index Users' do
-      expect(response.body).to include('Index Users')
+      expect(response.body).to include('Here is a list of users')
     end
   end
 
@@ -31,7 +31,7 @@ RSpec.describe 'Users', type: :request do
     end
 
     it 'Should have text Show Users' do
-      expect(response.body).to include('Show User')
+      expect(response.body).to include('Here is a specific user')
     end
   end
 end

@@ -18,7 +18,7 @@ RSpec.describe 'Posts', type: :request do
     end
 
     it 'Should have text Index Posts' do
-      expect(response.body).to include('Index Posts')
+      expect(response.body).to include('Here is a list of posts for a given user')
     end
   end
 
@@ -34,7 +34,7 @@ RSpec.describe 'Posts', type: :request do
     end
 
     it 'Should have text Show Post' do
-      expect(response.body).to include('Show Post')
+      expect(response.body).to include('Here is a specific post')
     end
   end
 end
