@@ -1,9 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'Users', type: :request do
-  before(:all) do
-    Rails.application.load_seed
-  end
 
   describe 'GET /users' do
     before { get users_path }

@@ -1,9 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'Posts', type: :request do
-  before(:all) do
-    Rails.application.load_seed
-  end
 
   before { get user_posts_path(user_id: User.first.id) }
   describe 'GET /posts' do
