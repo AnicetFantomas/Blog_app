@@ -56,10 +56,10 @@ bundle install
 rails s
 ```
 
-### Test
+### Test run
 
-```sh
-rspec
+```
+rspec spec/requests
 ```
 
 ## Author
