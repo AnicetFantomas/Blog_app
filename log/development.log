@@ -883,3 +883,30 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 13ms (Views: 11.2ms | Allocations: 4341)
 
 
+Started GET "/posts" for 127.0.0.1 at 2022-07-20 16:13:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  
+Started GET "/post" for 127.0.0.1 at 2022-07-20 16:13:25 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/post"):
+  
+Started GET "/users" for 127.0.0.1 at 2022-07-20 16:13:36 +0200
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 106.0ms | Allocations: 2647)
+Completed 200 OK in 317ms (Views: 108.0ms | Allocations: 3006)
+
+
+Started GET "/users/posts" for 127.0.0.1 at 2022-07-20 16:13:44 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"posts"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2641)
+Completed 200 OK in 12ms (Views: 11.1ms | Allocations: 3015)
+
+
