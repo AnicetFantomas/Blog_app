@@ -4755,3 +4755,174 @@ Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.6ms | Allocations: 422
 
 
   [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/" for 127.0.0.1 at 2022-07-23 10:46:50 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 30.0ms | Allocations: 5813)
+  Rendered layout layouts/application.html.erb (Duration: 186.8ms | Allocations: 42251)
+Completed 200 OK in 224ms (Views: 184.1ms | ActiveRecord: 9.3ms | Allocations: 48353)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2022-07-23 10:46:55 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 69.1ms | Allocations: 8412)
+  Rendered layout layouts/application.html.erb (Duration: 73.6ms | Allocations: 8515)
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 1.0ms | Allocations: 11350)
+
+
+  
+ActionView::Template::Error (private method `most_recent_posts' called for #<User id: 2, name: "Lilly", photo: "https://unsplash.com/photos/F_-0BxGuVvo", bio: "Teacher from Poland.", posts_counter: 1, created_at: "2022-07-22 20:03:17.002453000 +0000", updated_at: "2022-07-22 20:03:17.002453000 +0000">):
+     8:     </div>
+     9:     <p class="user-bio"><%= @user.bio %></p>
+    10: 
+    11:     <% @user.most_recent_posts.each do |post| %>
+    12:         <%= link_to user_post_path(@user.id, post.id) do %>
+    13:         <div class="user-recent-post">
+    14:             <p class="post-title">Post : <%= post.title %></p>
+  
+app/views/users/show.html.erb:11
+Started GET "/" for 127.0.0.1 at 2022-07-23 10:47:29 +0200
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 987)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 3690)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.8ms | Allocations: 4021)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2022-07-23 10:47:32 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 29.0ms | Allocations: 7595)
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 7683)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.6ms | Allocations: 8472)
+
+
+  
+ActionView::Template::Error (private method `most_recent_posts' called for #<User id: 4, name: "Vanilla", photo: "https://unsplash.com/photos/F_-0BxGuVvo", bio: "Teacher from Kigali.", posts_counter: 0, created_at: "2022-07-22 20:24:13.920254000 +0000", updated_at: "2022-07-22 20:24:13.920254000 +0000">):
+     8:     </div>
+     9:     <p class="user-bio"><%= @user.bio %></p>
+    10: 
+    11:     <% @user.most_recent_posts.each do |post| %>
+    12:         <%= link_to user_post_path(@user.id, post.id) do %>
+    13:         <div class="user-recent-post">
+    14:             <p class="post-title">Post : <%= post.title %></p>
+  
+app/views/users/show.html.erb:11
+Started GET "/" for 127.0.0.1 at 2022-07-23 10:48:05 +0200
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 881)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 3401)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.5ms | Allocations: 3687)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-07-23 10:48:24 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 31.8ms | Allocations: 7551)
+  Rendered layout layouts/application.html.erb (Duration: 32.5ms | Allocations: 7639)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.5ms | Allocations: 8395)
+
+
+  
+ActionView::Template::Error (private method `most_recent_posts' called for #<User id: 1, name: "Tom", photo: "https://unsplash.com/photos/F_-0BxGuVvo", bio: "Teacher from Mexico.", posts_counter: 5, created_at: "2022-07-22 20:03:16.965505000 +0000", updated_at: "2022-07-22 20:03:16.965505000 +0000">):
+     8:     </div>
+     9:     <p class="user-bio"><%= @user.bio %></p>
+    10: 
+    11:     <% @user.most_recent_posts.each do |post| %>
+    12:         <%= link_to user_post_path(@user.id, post.id) do %>
+    13:         <div class="user-recent-post">
+    14:             <p class="post-title">Post : <%= post.title %></p>
+  
+app/views/users/show.html.erb:11
+Started GET "/" for 127.0.0.1 at 2022-07-23 10:50:29 +0200
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 874)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 3435)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.5ms | Allocations: 3713)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-23 10:52:42 +0200
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1267)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 2941)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.5ms | Allocations: 3783)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2022-07-23 10:52:46 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 45.2ms | Allocations: 7921)
+  Rendered layout layouts/application.html.erb (Duration: 46.7ms | Allocations: 8009)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.7ms | Allocations: 8872)
+
+
+  
+ActionView::Template::Error (private method `most_recent_posts' called for #<User id: 1, name: "Tom", photo: "https://unsplash.com/photos/F_-0BxGuVvo", bio: "Teacher from Mexico.", posts_counter: 5, created_at: "2022-07-22 20:03:16.965505000 +0000", updated_at: "2022-07-22 20:03:16.965505000 +0000">):
+     8:     </div>
+     9:     <p class="user-bio"><%= @user.bio %></p>
+    10: 
+    11:     <% @user.most_recent_posts.each do |post| %>
+    12:         <%= link_to user_post_path(@user.id, post.id) do %>
+    13:         <div class="user-recent-post">
+    14:             <p class="post-title">Post : <%= post.title %></p>
+  
+app/views/users/show.html.erb:11
+Started GET "/users/2" for 127.0.0.1 at 2022-07-23 10:52:56 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 39.0ms | Allocations: 7550)
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 7638)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.5ms | Allocations: 8393)
+
+
+  
+ActionView::Template::Error (private method `most_recent_posts' called for #<User id: 2, name: "Lilly", photo: "https://unsplash.com/photos/F_-0BxGuVvo", bio: "Teacher from Poland.", posts_counter: 1, created_at: "2022-07-22 20:03:17.002453000 +0000", updated_at: "2022-07-22 20:03:17.002453000 +0000">):
+     8:     </div>
+     9:     <p class="user-bio"><%= @user.bio %></p>
+    10: 
+    11:     <% @user.most_recent_posts.each do |post| %>
+    12:         <%= link_to user_post_path(@user.id, post.id) do %>
+    13:         <div class="user-recent-post">
+    14:             <p class="post-title">Post : <%= post.title %></p>
+  
+app/views/users/show.html.erb:11
