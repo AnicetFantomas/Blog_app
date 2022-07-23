@@ -1,26 +1,27 @@
-<div class="container flex flex--column">
-    <div class="row">
-         <%= render partial: "shared/single_user", local: {user: @user} %>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <p>
-                <%= @user.bio%>
-            </p>
+<section class="container">
+    <div class="user-box">
+        <img class="image-user" src=<%= @user.photo %> alt="user"/>
+        <div class="user-info">
+            <p class="user-name"><%= @user.name %></p>
+            <p class="user-post">Number of posts: <%= @user.posts_counter%></p>
         </div>
     </div>
+    <p class="user-bio"><%= @user.bio %></p>
 
-    <div class="row flex flex--column">
-        <% @user.recent_posts.each do |post| %>
-            <div class="row">
-                <div class="col">
-                    <div class="cards-body">
-                        <h5 class="card-title"><=% link_to post.title, user_post_path{post.id} %></h5>
-                        <p class="card-text"><%= post.text %></p>
-                    </div>
-                </div>
-            </div>
+    <% @user.most_recent_posts.each do |post| %>
+        <%= link_to user_post_path(@user.id, post.id) do %>
+        <div class="user-recent-post">
+            <p class="post-title">Post : <%= post.title %></p>
+            <p class="post-text"><%= post.text %></p>
+            <h3 class="counters">Comments: <%= post.comments_counter %>
+                Likes: <%= post.likes_counter %><h3>
+        </div>
         <% end %>
+    <% end %>
+
+    <div class="button-user">
+        <button class="button">
+        <%= link_to "See all posts", user_posts_path(@user), class:"text-button" %>
+        </button>
     </div>
-</div>
+</section>
