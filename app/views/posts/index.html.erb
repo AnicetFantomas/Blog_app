@@ -18,7 +18,7 @@
         </div>
 
         <div class="comment-info">
-            <% post.comments.each do |comment| %>
+            <% post.recent_comments.each do |comment| %>
                 <p>
                     <span>
                         <%= comment.author.name %>:
@@ -33,6 +33,7 @@
     <% end %>
 
     <div class="button-user">
+        <%= button_to 'Add New Post', new_user_post_url(id: @user.id), method: :get, class: "button"%>
         <button class="button">
             Pagination
         </button>

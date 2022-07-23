@@ -7,7 +7,7 @@
         <p><%= @post.text %></p>
     </div>
     <div class="comment-info">
-        <% @post.comments.each do |comment| %>
+        <% @post.recent_comments.each do |comment| %>
             <div>
                 <p>
                     <span>
@@ -19,5 +19,9 @@
                 </p>
             </div>
         <% end %>
+    </div>
+    <div class="button-user">
+        <%= button_to "Add Comment", new_user_post_comment_path(@post.author, @post), method: :get, class: "button" %>
+        <%= button_to "Add Like", new_user_post_like_path(@post.author, @post), method: :get, class: "button" %>
     </div>
 </section>
