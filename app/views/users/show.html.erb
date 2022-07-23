@@ -8,7 +8,7 @@
     </div>
     <p class="user-bio"><%= @user.bio %></p>
 
-    <% @user.most_recent_posts.each do |post| %>
+    <% @user.posts.each do |post| %>
         <%= link_to user_post_path(@user.id, post.id) do %>
         <div class="user-recent-post">
             <p class="post-title">Post : <%= post.title %></p>
