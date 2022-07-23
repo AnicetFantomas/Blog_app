@@ -18,7 +18,7 @@
         </div>
 
         <div class="comment-info">
-            <% post.recent_comments.each do |comment| %>
+            <% post.comments.each do |comment| %>
                 <p>
                     <span>
                         <%= comment.author.name %>:
