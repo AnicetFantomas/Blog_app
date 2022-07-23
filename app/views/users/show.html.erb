@@ -1,1 +1,26 @@
-<h2>Here is a specific user</h2>
+<div class="container flex flex--column">
+    <div class="row">
+         <%= render partial: "shared/single_user", local: {user: @user} %>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <p>
+                <%= @user.bio%>
+            </p>
+        </div>
+    </div>
+
+    <div class="row flex flex--column">
+        <% @user.recent_posts.each do |post| %>
+            <div class="row">
+                <div class="col">
+                    <div class="cards-body">
+                        <h5 class="card-title"><=% link_to post.title, user_post_path{post.id} %></h5>
+                        <p class="card-text"><%= post.text %></p>
+                    </div>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>

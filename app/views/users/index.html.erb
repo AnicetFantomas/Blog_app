@@ -1,1 +1,5 @@
-<h2>Here is a list of users</h2>
+<section class='container flex flex--column'>
+   <% @users.each do |user| %>
+    <%= render partial: 'shared/single_user', locals: {user: user}%>
+    <% end %>
+</section>
