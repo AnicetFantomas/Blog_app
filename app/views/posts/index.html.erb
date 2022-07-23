@@ -1,22 +1,41 @@
-<section class="container flex flex--column">
-    <div class="column">
-        <%= render partial: "shared/single_user", locals: {user: @user}%>
+<section class="container">
+
+    <div class="user-box">
+        <img class="image-user" src=<%= @user.photo %> alt="user"/>
+        <div class="user-info">
+            <p class="user-name"><%= @user.name %></p>
+            <p class="user-post">Number of posts: <%= @user.posts_counter%></p>
+        </div>
     </div>
 
-    <div class="row flex flex--column">
-        <%=  @posts.each do |post| %>
-            <div class='row'>
-                <div class="card">
-                    <div class="card-body">
-                    <h5 class="card-title"><% link_to post.title, user_post_path(post.author.id, post.id) %></h5>
-                    <p class="card-text"><%= comment.author.name %>: <%= comment.text %></p>
-                </div>
-                <div class="card-body">
-                    <% post.recent_comment.each do |comment| %>
-                        <p><%= comment.author.name %>: <%= comment.text %></p>
-                    <% end %>
-                </div>
-            </div>
-        <% end %>
+    <% @posts.each do |post| %>
+        <div class="post-info">
+            <%= link_to user_post_path(@user.id, post.id) do %>
+                <p class="post-title">Post : <%= post.title %> by <%= post.author.name %></p>
+                <p class="post-text"><%= post.text %></p>
+                <p class="post-text-2">Comments: <span><%= post.comments_counter || 0 %>, Likes: <%= post.likes_counter || 0 %></span></p>
+            <% end %>
+        </div>
+
+        <div class="comment-info">
+            <% post.recent_comments.each do |comment| %>
+                <p>
+                    <span>
+                        <%= comment.author.name %>:
+                    </span>
+                    <span>
+                        <%= comment.text %>
+                    </span>
+                </p>
+            <% end %>
+        </div>
+
+    <% end %>
+
+    <div class="button-user">
+        <button class="button">
+            Pagination
+        </button>
     </div>
+
 </section>
