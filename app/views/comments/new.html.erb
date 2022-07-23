@@ -1,9 +1,14 @@
-<h1>New comment</h1>
+<section class="container">
+    <p class="post-title">Add New Comment :</p>
+    <%= form_with model: @comment, url: user_post_comments_path, method: :post, local: true, class: "form-control" do |form| %>
 
-<%= render "form", comment: @comment %>
+    <div>
+        <%= form.label :text %>
+        <%= form.text_area :text, placeholder: "Type your comment here!", rows: 20, required: true,  class: "form-post-text" %>
+    </div>
 
-<br>
-
-<div>
-  <%= link_to "Back to comments", comments_path %>
-</div>
+    <div>
+        <%= form.submit "Save", class: "button" %>
+    </div>
+    <% end %>
+</section>
