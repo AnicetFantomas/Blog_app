@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'Users', type: :request do
-
   describe 'GET /users' do
     before { get users_path }
     it 'returns a 200 status code' do
