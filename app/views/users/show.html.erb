@@ -8,7 +8,7 @@
     </div>
     <p class="user-bio"><%= @user.bio %></p>
 
-    <% @user.posts.each do |post| %>
+    <% @user.recent_posts.each do |post| %>
         <%= link_to user_post_path(@user.id, post.id) do %>
         <div class="user-recent-post">
             <p class="post-title">Post : <%= post.title %></p>
@@ -22,6 +22,6 @@
     <div class="button-user">
         <button class="button">
         <%= link_to "See all posts", user_posts_path(@user), class:"text-button" %>
-        </button>
+         </button>
     </div>
 </section>
