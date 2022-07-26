@@ -71,6 +71,12 @@ rspec spec/requests
 - GitHub: [@AnicetFantomas](https://github.com/AnicetFantomas)
 - Twitter: [@FantomasAnicet](https://twitter.com/FantomasAnicet)
 - LinkedIn: [Anicet Murhula](https://www.linkedin.com/in/anicet-murhula/)
+
+👤 **Edward Odhiambo**
+
+- GitHub: [@whit3d](https://github.com/white3d)
+- Twitter: [@odhiambo_ed](https://twitter.com/odhiambo_ed)
+- LinkedIn: [Edward Odhiambo](https://www.linkedin.com/in/edward-odhiambo-6a462a21b/)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
