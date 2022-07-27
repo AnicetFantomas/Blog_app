@@ -7674,3 +7674,70 @@ FOREIGN KEY ("post_id")
   [1m[36mTRANSACTION (7.4ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(1842827930600050695)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-07-27 11:23:16 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1250)
+  Rendered layout layouts/application.html.erb (Duration: 134.8ms | Allocations: 24235)
+Completed 200 OK in 160ms (Views: 136.5ms | ActiveRecord: 3.2ms | Allocations: 29692)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-27 11:23:25 +0200
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 654)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 2157)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.5ms | Allocations: 2510)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-27 11:23:26 +0200
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 587)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 1910)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.4ms | Allocations: 2196)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-27 11:23:27 +0200
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 587)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 1913)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.6ms | Allocations: 2199)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-27 11:23:28 +0200
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 580)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 1899)
+Completed 200 OK in 24ms (Views: 16.6ms | ActiveRecord: 6.7ms | Allocations: 2177)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-27 11:24:45 +0200
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 731)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 2296)
+Completed 200 OK in 18ms (Views: 10.7ms | ActiveRecord: 0.6ms | Allocations: 4574)
+
+
