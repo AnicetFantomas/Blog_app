@@ -1,33 +1,35 @@
-require 'rails_helper'
-
-RSpec.describe 'Users', type: :request do
-  describe 'GET /users' do
-    before { get users_path }
-    it 'returns a 200 status code' do
-      expect(response).to have_http_status(200)
-    end
-
-    it 'Should render index template' do
-      expect(response).to render_template(:index)
-    end
-
-    it 'Should have text Index Users' do
-      expect(response.body).to include('Here is a list of users')
+RSpec.describe 'Users Controller', type: :request do
+  describe 'GET /index' do
+    context 'when the page is loaded' do
+      before do
+        get '/users'
+      end
+      it 'returns a 200 status code' do
+        expect(response).to have_http_status(200)
+      end
+      it 'renders the index template' do
+        expect(response).to render_template('index')
+        expect(response.body).to render_template('index')
+      end
     end
   end
 
-  describe 'GET /users/:id' do
-    before { get user_path(1) }
-    it 'returns a 200 status code' do
-      expect(response).to have_http_status(200)
-    end
-
-    it 'Should render show template' do
-      expect(response).to render_template(:show)
-    end
-
-    it 'Should have text Show Users' do
-      expect(response.body).to include('Here is a specific user')
+  describe 'GET /show' do
+    context 'when the page is loaded' do
+      let!(:user) { User.create(name: 'Monica', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Kenya.', posts_counter: 0) }
+      before do
+        get user_path(user.id)
+      end
+      it 'returns a 200 status code' do
+        expect(response).to have_http_status(200)
+      end
+      it 'renders the show template' do
+        expect(response).to render_template('show')
+        expect(response.body).to render_template('show')
+      end
+      it 'includes see all posts' do
+        expect(response.body).to include('See all posts')
+      end
     end
   end
 end
