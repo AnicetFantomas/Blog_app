@@ -9367,3 +9367,54 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 17ms (Views: 14.5ms | Allocations: 3969)
 
 
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-07-29 18:21:41 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 85)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 856)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 2027)
+Completed 200 OK in 30ms (Views: 27.8ms | Allocations: 2672)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-07-29 18:22:28 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 5.7ms | Allocations: 1501)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 89)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.0ms | Allocations: 2426)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 3701)
+Completed 200 OK in 1264ms (Views: 14.7ms | ActiveRecord: 98.5ms | Allocations: 13825)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-07-29 18:23:26 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 3.6ms | Allocations: 1230)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 85)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 2068)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 3239)
+Completed 200 OK in 354ms (Views: 13.2ms | ActiveRecord: 1.2ms | Allocations: 8227)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-07-29 18:24:17 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 160)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1029)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2200)
+Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 2807)
+
+
