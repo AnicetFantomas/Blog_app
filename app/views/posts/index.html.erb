@@ -30,6 +30,9 @@
             <% end %>
         </div>
 
+        <% if can? :destroy, @post %>
+            <%= button_to 'Delete Comment', "/users/#{params[:user_id]}/posts/#{@post.id}",  method: :delete, class: "btn text-white btn-danger" %>
+        <% end %>
     <% end %>
 
     <div class="button-user">
