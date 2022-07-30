@@ -1,45 +1,20 @@
-<section class="container">
-
-    <div class="user-box">
-        <img class="image-user" src=<%= @user.photo %> alt="user"/>
-        <div class="user-info">
-            <p class="user-name"><%= @user.name %></p>
-            <p class="user-post">Number of posts: <%= @user.posts_counter%></p>
-        </div>
-    </div>
-
+<div class="posts">
+    <img src="<%= @user.photo %>" alt="<%= @user.name %>" />
+    <h1><%= @user.name %></h1>
+    <h2><%= @user.bio %></h2>
+    <p>Number of posts :<%= @user.posts_counter %></p>
+    <%= link_to "Create new post", new_user_post_path(@user)  %>
     <% @posts.each do |post| %>
-        <div class="post-info">
-            <%= link_to user_post_path(@user.id, post.id) do %>
-                <p class="post-title">Post : <%= post.title %> by <%= post.author.name %></p>
-                <p class="post-text"><%= post.text %></p>
-                <p class="post-text-2">Comments: <span><%= post.comments_counter || 0 %>, Likes: <%= post.likes_counter || 0 %></span></p>
-            <% end %>
-        </div>
-
-        <div class="comment-info">
-            <% post.comments.each do |comment| %>
-                <p>
-                    <span>
-                        <%= comment.author.name %>:
-                    </span>
-                    <span>
-                        <%= comment.text %>
-                    </span>
-                </p>
-            <% end %>
-        </div>
-
-        <% if can? :destroy, @post %>
-            <%= button_to 'Delete Comment', "/users/#{params[:user_id]}/posts/#{@post.id}",  method: :delete, class: "btn text-white btn-danger" %>
-        <% end %>
+            <div class="schow_posts">
+                <h3><%=post.title %></h3>
+                <p><%=post.text %></p>
+                <p>comment: <%=post.comments_counter %>
+                <p>likes: <%=post.likes_counter %>
+                <% post.comments.each do |comment| %>
+                    <%= button_to 'Delete comment', user_post_comment_path(comment.author, @post, comment), method: :delete, data: { confirm: 'Are you sure?' } %>    
+                    <p><%=comment.text %></p>
+                <% end %>
+                <%= button_to 'Delete comment', user_post_comment_path(comment.author, @post, comment), method: :delete, data: { confirm: 'Are you sure?' } %>    
+            </div>
     <% end %>
-
-    <div class="button-user">
-        <%= button_to 'Add New Post', new_user_post_url(id: @user.id), method: :get, class: "button"%>
-        <button class="button">
-            Pagination
-        </button>
-    </div>
-
-</section>
+</div>
