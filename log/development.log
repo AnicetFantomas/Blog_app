@@ -9418,3 +9418,841 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 13ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 2807)
 
 
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-07-29 19:11:42 +0200
+Processing by Devise::RegistrationsController#new as HTML
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-07-29 19:11:47 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered devise/shared/_links.html.erb (Duration: 75.3ms | Allocations: 5570)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 131.6ms | Allocations: 6572)
+  Rendered layout layouts/application.html.erb (Duration: 132.1ms | Allocations: 6676)
+Completed 500 Internal Server Error in 547ms (ActiveRecord: 138.7ms | Allocations: 14761)
+
+
+  
+ActionView::Template::Error (undefined method `new_confirmation_path' for #<ActionView::Base:0x00000000017160>
+Did you mean?  new_user_confirmation_path
+               user_confirmation_path):
+    11: <% end %>
+    12: 
+    13: <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+    14:   <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+    15: <% end %>
+    16: 
+    17: <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+  
+app/views/devise/shared/_links.html.erb:14
+app/views/devise/registrations/new.html.erb:27
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 29)
+  Rendered devise/shared/_links.html.erb (Duration: 25.6ms | Allocations: 5505)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 36.5ms | Allocations: 6469)
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 6563)
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 40.2ms | Allocations: 11688)
+
+
+  
+ActionView::Template::Error (undefined method `new_confirmation_path' for #<ActionView::Base:0x0000000001cbb0>
+Did you mean?  new_user_confirmation_path
+               user_confirmation_path):
+    11: <% end %>
+    12: 
+    13: <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+    14:   <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+    15: <% end %>
+    16: 
+    17: <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+  
+app/views/devise/shared/_links.html.erb:14
+app/views/devise/registrations/new.html.erb:27
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-07-29 19:11:53 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered devise/shared/_links.html.erb (Duration: 36.2ms | Allocations: 5495)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 39.5ms | Allocations: 6268)
+  Rendered layout layouts/application.html.erb (Duration: 39.9ms | Allocations: 6356)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms | Allocations: 7011)
+
+
+  
+ActionView::Template::Error (undefined method `new_confirmation_path' for #<ActionView::Base:0x0000000001ced0>
+Did you mean?  new_user_confirmation_path
+               user_confirmation_path):
+    11: <% end %>
+    12: 
+    13: <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+    14:   <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+    15: <% end %>
+    16: 
+    17: <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+  
+app/views/devise/shared/_links.html.erb:14
+app/views/devise/registrations/new.html.erb:27
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-07-29 19:12:01 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered devise/shared/_links.html.erb (Duration: 36.0ms | Allocations: 5495)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 39.7ms | Allocations: 6268)
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 6356)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms | Allocations: 6910)
+
+
+  
+ActionView::Template::Error (undefined method `new_confirmation_path' for #<ActionView::Base:0x0000000001d1a0>
+Did you mean?  new_user_confirmation_path
+               user_confirmation_path):
+    11: <% end %>
+    12: 
+    13: <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+    14:   <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+    15: <% end %>
+    16: 
+    17: <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+  
+app/views/devise/shared/_links.html.erb:14
+app/views/devise/registrations/new.html.erb:27
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-07-29 19:13:39 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 206)
+  Rendered devise/shared/_links.html.erb (Duration: 29.1ms | Allocations: 5922)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 37.3ms | Allocations: 7487)
+  Rendered layout layouts/application.html.erb (Duration: 37.8ms | Allocations: 7581)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms | Allocations: 8757)
+
+
+  
+ActionView::Template::Error (undefined method `new_confirmation_path' for #<ActionView::Base:0x0000000001d538>
+Did you mean?  new_user_confirmation_path
+               user_confirmation_path):
+    11: <% end %>
+    12: 
+    13: <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+    14:   <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+    15: <% end %>
+    16: 
+    17: <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+  
+app/views/devise/shared/_links.html.erb:14
+app/views/devise/registrations/new.html.erb:27
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-07-29 19:14:07 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.5ms | Allocations: 206)
+  Rendered devise/shared/_links.html.erb (Duration: 27.9ms | Allocations: 5925)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 35.5ms | Allocations: 7490)
+  Rendered layout layouts/application.html.erb (Duration: 35.9ms | Allocations: 7584)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms | Allocations: 8862)
+
+
+  
+ActionView::Template::Error (undefined method `new_confirmation_path' for #<ActionView::Base:0x0000000001d8d0>
+Did you mean?  new_user_confirmation_path
+               user_confirmation_path):
+    11: <% end %>
+    12: 
+    13: <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+    14:   <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+    15: <% end %>
+    16: 
+    17: <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+  
+app/views/devise/shared/_links.html.erb:14
+app/views/devise/registrations/new.html.erb:27
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-07-29 19:14:54 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.1ms | Allocations: 206)
+  Rendered devise/shared/_links.html.erb (Duration: 29.4ms | Allocations: 5925)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 36.6ms | Allocations: 7490)
+  Rendered layout layouts/application.html.erb (Duration: 37.2ms | Allocations: 7584)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.0ms | Allocations: 8862)
+
+
+  
+ActionView::Template::Error (undefined method `new_confirmation_path' for #<ActionView::Base:0x0000000001dc90>
+Did you mean?  new_user_confirmation_path
+               user_confirmation_path):
+    11: <% end %>
+    12: 
+    13: <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+    14:   <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+    15: <% end %>
+    16: 
+    17: <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+  
+app/views/devise/shared/_links.html.erb:14
+app/views/devise/registrations/new.html.erb:27
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-07-29 19:15:10 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 29)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 116)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1077)
+  Rendered layout layouts/application.html.erb (Duration: 93.6ms | Allocations: 2648)
+Completed 200 OK in 116ms (Views: 95.5ms | ActiveRecord: 4.9ms | Allocations: 7766)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-07-29 19:17:07 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered devise/shared/_links.html.erb (Duration: 25.9ms | Allocations: 5501)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 29.7ms | Allocations: 6465)
+  Rendered layout layouts/application.html.erb (Duration: 30.1ms | Allocations: 6559)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 5.4ms | Allocations: 11557)
+
+
+  
+ActionView::Template::Error (undefined method `new_confirmation_path' for #<ActionView::Base:0x00000000028be0>
+Did you mean?  new_user_confirmation_path
+               user_confirmation_path):
+    11: <% end %>
+    12: 
+    13: <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+    14:   <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+    15: <% end %>
+    16: 
+    17: <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+  
+app/views/devise/shared/_links.html.erb:14
+app/views/devise/registrations/new.html.erb:27
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-07-29 19:19:14 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 29)
+  Rendered devise/shared/_links.html.erb (Duration: 27.3ms | Allocations: 5501)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 31.3ms | Allocations: 6465)
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 6559)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 5.7ms | Allocations: 11615)
+
+
+  
+ActionView::Template::Error (undefined method `new_confirmation_path' for #<ActionView::Base:0x0000000002e6d0>
+Did you mean?  new_user_confirmation_path
+               user_confirmation_path):
+    11: <% end %>
+    12: 
+    13: <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+    14:   <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+    15: <% end %>
+    16: 
+    17: <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+  
+app/views/devise/shared/_links.html.erb:14
+app/views/devise/registrations/new.html.erb:27
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-07-29 19:24:25 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 29)
+  Rendered devise/shared/_links.html.erb (Duration: 24.6ms | Allocations: 5501)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 36.2ms | Allocations: 6465)
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 6559)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 4.7ms | Allocations: 11616)
+
+
+  
+ActionView::Template::Error (undefined method `new_confirmation_path' for #<ActionView::Base:0x000000000341e8>
+Did you mean?  new_user_confirmation_path
+               user_confirmation_path):
+    11: <% end %>
+    12: 
+    13: <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+    14:   <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+    15: <% end %>
+    16: 
+    17: <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+  
+app/views/devise/shared/_links.html.erb:14
+app/views/devise/registrations/new.html.erb:27
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-07-29 19:24:42 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered devise/shared/_links.html.erb (Duration: 25.3ms | Allocations: 5501)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 35.7ms | Allocations: 6465)
+  Rendered layout layouts/application.html.erb (Duration: 36.3ms | Allocations: 6559)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 7.4ms | Allocations: 11614)
+
+
+  
+ActionView::Template::Error (undefined method `new_confirmation_path' for #<ActionView::Base:0x00000000039cd8>
+Did you mean?  new_user_confirmation_path
+               user_confirmation_path):
+    11: <% end %>
+    12: 
+    13: <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+    14:   <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+    15: <% end %>
+    16: 
+    17: <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+  
+app/views/devise/shared/_links.html.erb:14
+app/views/devise/registrations/new.html.erb:27
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-07-29 19:25:25 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 29)
+  Rendered devise/shared/_links.html.erb (Duration: 24.9ms | Allocations: 5501)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 37.1ms | Allocations: 6465)
+  Rendered layout layouts/application.html.erb (Duration: 37.5ms | Allocations: 6559)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 6.8ms | Allocations: 11615)
+
+
+  
+ActionView::Template::Error (undefined method `new_confirmation_path' for #<ActionView::Base:0x0000000003f840>
+Did you mean?  new_user_confirmation_path
+               user_confirmation_path):
+    11: <% end %>
+    12: 
+    13: <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+    14:   <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+    15: <% end %>
+    16: 
+    17: <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+  
+app/views/devise/shared/_links.html.erb:14
+app/views/devise/registrations/new.html.erb:27
+Started GET "/" for 127.0.0.1 at 2022-07-29 19:30:24 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 58.2ms | Allocations: 1270)
+  Rendered layout layouts/application.html.erb (Duration: 947.4ms | Allocations: 24606)
+Completed 200 OK in 1323ms (Views: 1007.6ms | ActiveRecord: 1.5ms | Allocations: 28515)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-29 19:30:26 +0200
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 675)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 2172)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.8ms | Allocations: 2528)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-07-29 19:30:51 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 51.0ms | Allocations: 254)
+  Rendered devise/shared/_links.html.erb (Duration: 2.5ms | Allocations: 701)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 509.9ms | Allocations: 3209)
+  Rendered layout layouts/application.html.erb (Duration: 528.8ms | Allocations: 4546)
+Completed 200 OK in 776ms (Views: 531.4ms | ActiveRecord: 117.0ms | Allocations: 14489)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-07-29 19:31:00 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (25.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 107.8ms | Allocations: 2474)
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 143)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 113.4ms | Allocations: 3454)
+  Rendered layout layouts/application.html.erb (Duration: 117.9ms | Allocations: 4731)
+Completed 200 OK in 667ms (Views: 119.1ms | ActiveRecord: 26.5ms | Allocations: 13075)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-07-29 19:31:16 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 6.3ms | Allocations: 1693)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 139)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.7ms | Allocations: 2884)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 4055)
+Completed 200 OK in 375ms (Views: 17.2ms | ActiveRecord: 1.1ms | Allocations: 9316)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-07-29 19:33:28 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 4.7ms | Allocations: 1230)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 139)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 2122)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 3293)
+Completed 200 OK in 362ms (Views: 14.1ms | ActiveRecord: 1.2ms | Allocations: 8194)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-07-29 19:33:36 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 4.3ms | Allocations: 1230)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 139)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 2122)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 3293)
+Completed 200 OK in 358ms (Views: 13.3ms | ActiveRecord: 1.2ms | Allocations: 8193)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-29 19:33:43 +0200
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 620)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 1968)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 1.2ms | Allocations: 2261)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-07-29 19:40:25 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 5.4ms | Allocations: 1628)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 139)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 2805)
+  Rendered layout layouts/application.html.erb (Duration: 39.9ms | Allocations: 3976)
+Completed 200 OK in 446ms (Views: 41.0ms | ActiveRecord: 101.4ms | Allocations: 11821)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-07-29 19:40:45 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 5.8ms | Allocations: 1622)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 139)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 2808)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 3979)
+Completed 200 OK in 376ms (Views: 15.8ms | ActiveRecord: 1.2ms | Allocations: 8946)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-07-29 19:47:04 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 3.7ms | Allocations: 1230)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 139)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2122)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 3293)
+Completed 200 OK in 385ms (Views: 12.4ms | ActiveRecord: 10.9ms | Allocations: 10997)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-07-29 20:01:06 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 47.4ms | Allocations: 1459)
+  Rendered devise/shared/_links.html.erb (Duration: 2.3ms | Allocations: 548)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 68.9ms | Allocations: 3361)
+  Rendered layout layouts/application.html.erb (Duration: 107.6ms | Allocations: 4895)
+Completed 200 OK in 769ms (Views: 110.5ms | ActiveRecord: 80.8ms | Allocations: 13437)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-29 20:02:54 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 23.9ms | Allocations: 1270)
+  Rendered layout layouts/application.html.erb (Duration: 2066.9ms | Allocations: 24848)
+Completed 200 OK in 2299ms (Views: 2138.9ms | ActiveRecord: 1.2ms | Allocations: 28756)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-07-29 20:03:07 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.7ms | Allocations: 254)
+  Rendered devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 701)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 259.2ms | Allocations: 3209)
+  Rendered layout layouts/application.html.erb (Duration: 263.2ms | Allocations: 4546)
+Completed 200 OK in 367ms (Views: 265.8ms | ActiveRecord: 10.5ms | Allocations: 14497)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-07-29 20:03:28 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 150.8ms | Allocations: 2480)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 143)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 155.3ms | Allocations: 3460)
+  Rendered layout layouts/application.html.erb (Duration: 160.9ms | Allocations: 4737)
+Completed 200 OK in 802ms (Views: 162.5ms | ActiveRecord: 2.1ms | Allocations: 13110)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-29 20:27:13 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (30.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 74ms (ActiveRecord: 0.0ms | Allocations: 2287)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-07-29 20:27:15 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.2ms | Allocations: 806)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 237.4ms | Allocations: 3459)
+  Rendered layout layouts/application.html.erb (Duration: 478.8ms | Allocations: 26171)
+Completed 200 OK in 816ms (Views: 599.9ms | ActiveRecord: 148.6ms | Allocations: 37541)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-07-29 20:27:18 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 19.6ms | Allocations: 215)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 200)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 43.5ms | Allocations: 1779)
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 3116)
+Completed 200 OK in 55ms (Views: 51.9ms | ActiveRecord: 0.0ms | Allocations: 4435)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-07-29 20:27:31 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (60.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 7.0ms | Allocations: 1504)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 143)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.5ms | Allocations: 2484)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 3762)
+Completed 200 OK in 574ms (Views: 18.3ms | ActiveRecord: 61.5ms | Allocations: 12210)
+
+
+Started GET "/users/confirmation/new" for 127.0.0.1 at 2022-07-29 20:27:58 +0200
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/confirmations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered devise/shared/_links.html.erb (Duration: 2.8ms | Allocations: 633)
+  Rendered devise/confirmations/new.html.erb within layouts/application (Duration: 25.0ms | Allocations: 2081)
+  Rendered layout layouts/application.html.erb (Duration: 30.1ms | Allocations: 3417)
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.0ms | Allocations: 4386)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-07-29 20:28:24 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 4.3ms | Allocations: 1240)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 139)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2136)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 3307)
+Completed 200 OK in 406ms (Views: 13.2ms | ActiveRecord: 3.8ms | Allocations: 8460)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-07-29 20:41:46 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 5.0ms | Allocations: 1230)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 139)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 2122)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 3293)
+Completed 200 OK in 395ms (Views: 13.3ms | ActiveRecord: 2.5ms | Allocations: 8224)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-07-29 20:41:52 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 5.0ms | Allocations: 1230)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 139)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.1ms | Allocations: 2122)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 3293)
+Completed 200 OK in 381ms (Views: 14.6ms | ActiveRecord: 1.2ms | Allocations: 8236)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-29 20:44:33 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 27ms (ActiveRecord: 0.0ms | Allocations: 2283)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-07-29 20:44:33 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.0ms | Allocations: 806)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 16.5ms | Allocations: 3465)
+  Rendered layout layouts/application.html.erb (Duration: 100.0ms | Allocations: 26151)
+Completed 200 OK in 152ms (Views: 108.8ms | ActiveRecord: 7.3ms | Allocations: 37533)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-07-29 20:44:37 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.6ms | Allocations: 215)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 200)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 24.1ms | Allocations: 1779)
+  Rendered layout layouts/application.html.erb (Duration: 53.5ms | Allocations: 3116)
+Completed 200 OK in 65ms (Views: 62.3ms | ActiveRecord: 0.0ms | Allocations: 4423)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-07-29 20:44:46 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 4.6ms | Allocations: 1504)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 143)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.3ms | Allocations: 2484)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 3767)
+Completed 200 OK in 420ms (Views: 15.3ms | ActiveRecord: 2.0ms | Allocations: 12201)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-30 10:12:07 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 78ms (ActiveRecord: 0.0ms | Allocations: 2129)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-07-30 10:12:09 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.3ms | Allocations: 806)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 212.7ms | Allocations: 3469)
+  Rendered layout layouts/application.html.erb (Duration: 481.7ms | Allocations: 26357)
+Completed 200 OK in 650ms (Views: 567.2ms | ActiveRecord: 12.5ms | Allocations: 37736)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-07-30 10:12:28 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 19.1ms | Allocations: 215)
+  Rendered devise/shared/_links.html.erb (Duration: 17.2ms | Allocations: 200)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 106.0ms | Allocations: 1779)
+  Rendered layout layouts/application.html.erb (Duration: 142.9ms | Allocations: 3116)
+Completed 200 OK in 151ms (Views: 147.3ms | ActiveRecord: 0.0ms | Allocations: 4445)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-07-30 10:12:38 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 8.5ms | Allocations: 1504)
+  Rendered devise/shared/_links.html.erb (Duration: 1.7ms | Allocations: 143)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 15.9ms | Allocations: 2484)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 3767)
+Completed 200 OK in 633ms (Views: 23.2ms | ActiveRecord: 2.8ms | Allocations: 12216)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-07-30 10:16:54 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 8.5ms | Allocations: 1875)
+  Rendered devise/shared/_links.html.erb (Duration: 3.0ms | Allocations: 545)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 24.7ms | Allocations: 5048)
+  Rendered layout layouts/application.html.erb (Duration: 31.3ms | Allocations: 6587)
+Completed 200 OK in 63ms (Views: 34.9ms | ActiveRecord: 1.9ms | Allocations: 12588)
+
+
+Started POST "/users" for 127.0.0.1 at 2022-07-30 10:17:06 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Anicet Murhula", "email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (113.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "photo", "bio", "posts_counter", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "Anicet Murhula"], ["photo", nil], ["bio", nil], ["posts_counter", 0], ["created_at", "2022-07-30 08:17:06.375650"], ["updated_at", "2022-07-30 08:17:06.375650"], ["email", "anicetmurhula20@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-07-30 08:17:06.376144"], ["unconfirmed_email", nil]]
+  [1m[36mTRANSACTION (33.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 2.4ms | Allocations: 359)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 22.9ms
+Delivered mail 62e4e9038d6ee_6f346e8c9157@anicetfantomas-HP-EliteBook-2540p-SK983UP-ABA.mail (60.3ms)
+Date: Sat, 30 Jul 2022 10:17:07 +0200
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: anicetmurhula20@gmail.com
+Message-ID: <62e4e9038d6ee_6f346e8c9157@anicetfantomas-HP-EliteBook-2540p-SK983UP-ABA.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome anicetmurhula20@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=ZizMC7Lzwx3dbDcuXoMJ">Confirm my account</a></p>
+
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 1582ms (ActiveRecord: 147.3ms | Allocations: 25543)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-30 10:17:07 +0200
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 363)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-07-30 10:17:07 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 229)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1605)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 2942)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 3963)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-07-30 10:17:24 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 432ms (ActiveRecord: 1.2ms | Allocations: 3333)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-07-30 10:17:25 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 216)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1149)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 2414)
+Completed 200 OK in 20ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 3185)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-07-30 10:17:27 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 376ms (ActiveRecord: 0.6ms | Allocations: 1933)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-07-30 10:17:27 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 214)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1074)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2247)
+Completed 200 OK in 16ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 2900)
+
+
+Started GET "/users/confirmation?confirmation_token=[FILTERED]" for ::1 at 2022-07-30 10:18:47 +0200
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "[FILTERED]"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (148.7ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "confirmed_at" = $2 WHERE "users"."id" = $3[0m  [["updated_at", "2022-07-30 08:18:47.350335"], ["confirmed_at", "2022-07-30 08:18:47.349687"], ["id", 450]]
+  [1m[36mTRANSACTION (30.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 204ms (ActiveRecord: 180.2ms | Allocations: 5370)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-07-30 10:18:47 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 216)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1152)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2416)
+Completed 200 OK in 18ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 3110)
+
+
+Started POST "/users/sign_in" for ::1 at 2022-07-30 10:20:25 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"anicetmurhula20@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "anicetmurhula20@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 383ms (ActiveRecord: 0.8ms | Allocations: 2546)
+
+
+Started GET "/" for ::1 at 2022-07-30 10:20:25 +0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 450], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:2
+  Rendered users/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1073)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 2456)
+Completed 200 OK in 27ms (Views: 15.5ms | ActiveRecord: 3.0ms | Allocations: 4532)
+
+
+Started GET "/alt=%22user%22" for ::1 at 2022-07-30 10:20:25 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/alt=%22user%22"):
+  
